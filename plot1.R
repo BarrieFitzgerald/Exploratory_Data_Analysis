@@ -21,7 +21,7 @@ datetime <- paste(as.Date(data$Date), data$Time)
 data$Datetime <- as.POSIXct(datetime)
 data$Global_active_power <- as.numeric(data$Global_active_power)
 
-## Making plot 1 and saving it
+## Making plot and saving it
 hist(data$Global_active_power, main="Global Active Power", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 dev.copy(png, file="plot1.png", height=480, width=480)
