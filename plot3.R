@@ -25,7 +25,7 @@ data$Sub_metering_1 <- as.numeric(data$Sub_metering_1)
 data$Sub_metering_2 <- as.numeric(data$Sub_metering_2)
 data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 
-## Making plot 1 and saving it
+## Making plot and saving it
 with(data, {
         plot(Sub_metering_1~Datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
         lines(Sub_metering_2~Datetime,col='Red')
