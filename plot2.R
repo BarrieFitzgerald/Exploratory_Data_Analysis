@@ -21,7 +21,7 @@ datetime <- paste(as.Date(data$Date), data$Time)
 data$Datetime <- as.POSIXct(datetime)
 data$Global_active_power <- as.numeric(data$Global_active_power)
 
-## Making plot 1 and saving it
+## Making plot and saving it
 plot(data$Global_active_power~data$Datetime, type="l",
      ylab="Global Active Power (kilowatts)", xlab="")
 dev.copy(png, file="plot2.png", height=480, width=480)
